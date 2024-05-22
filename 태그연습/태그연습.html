@@ -12,6 +12,9 @@
   /* class 중복 가능 */
   .text-blue{color: blue;}
   .text-red{color: red;}
+  .bg-yellow{background-color: yellow;}
+  .bg-pink{background-color: pink;}
+  
   /* id 중복 안됨. 무조건 하나만 */
   /* class < id 우선 적용 */
   #bg-blue{background-color:blue;color: #fff;}
@@ -22,19 +25,32 @@
   <div>
     div 태그 구역을 나누는 태그
   </div>
+  
+  <!-- block / inline -->
+  <!-- block : 가로 사이즈 100% 차지하는 요소 : div, p, h1~h6 -->
+  <!-- inline : 내용만큼만 가로 사이즈 차지하는 요소 : span -->
+  <p class="bg-yellow">123</p>
+  <p class="bg-yellow">456</p>
+  <span class="bg-pink">123</span>
+  <span class="bg-pink">456</span>
+  
   <div>
     나는 block 요소야.
   </div>
+  <span>나는 inline 요소야.</span>
   <div class="text-blue">
     나는 파란색 글씨를 하고싶어
   </div>
+  
   <!-- 글 본문을 작성할 때 많이 사용하는 태그 -->
   <p>paragraph의 약자</p>
+  
   <!-- 랜덤 텍스트 Lorem 5(숫자를 넣으면 단락 설정) -->
   <p class="text-red" id="text-green">Lorem ipsum dolor sit amet.</p>
   <p>Lorem ipsum dolor sit amet.</p>
   <p class="text-red">Lorem ipsum dolor sit amet.</p>
   <p>Lorem ipsum dolor sit amet.</p>
+  
   <!-- Heading Tag(h1 ~ h3)
        사이트에서 중요한 제목 등 작성할 때사용 -->
   <h1 id="bg-blue">안녕하세요!</h1>
