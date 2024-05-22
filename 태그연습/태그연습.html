@@ -9,7 +9,13 @@
   div {
     color:turquoise;
   }
+  /* class 중복 가능 */
   .text-blue{color: blue;}
+  .text-red{color: red;}
+  /* id 중복 안됨. 무조건 하나만 */
+  /* class < id 우선 적용 */
+  #bg-blue{background-color:blue;color: #fff;}
+  #text-green{color: green;}
 </style>
 <body>
   <!-- div : 상자처럼 구역을 나누는 태그 -->
@@ -24,11 +30,14 @@
   </div>
   <!-- 글 본문을 작성할 때 많이 사용하는 태그 -->
   <p>paragraph의 약자</p>
-
+  <!-- 랜덤 텍스트 Lorem 5(숫자를 넣으면 단락 설정) -->
+  <p class="text-red" id="text-green">Lorem ipsum dolor sit amet.</p>
+  <p>Lorem ipsum dolor sit amet.</p>
+  <p class="text-red">Lorem ipsum dolor sit amet.</p>
+  <p>Lorem ipsum dolor sit amet.</p>
   <!-- Heading Tag(h1 ~ h3)
-       사이트에서 중요한 제목 등 작성할 때사용    
-  -->
-  <h1>안녕하세요!</h1>
+       사이트에서 중요한 제목 등 작성할 때사용 -->
+  <h1 id="bg-blue">안녕하세요!</h1>
   <h2>안녕하세요!2</h2>
   <h3>안녕하세요!2</h3>
   <h4>안녕하세요!2</h4>
