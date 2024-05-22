@@ -12,7 +12,7 @@
   /* class 중복 가능 */
   .text-blue{color: blue;}
   .text-red{color: red;}
-  .bg-yellow{background-color: yellow;}
+  .bg-yellow p{background-color: yellow;}
   .bg-pink{background-color: pink;}
   
   /* id 중복 안됨. 무조건 하나만 */
@@ -29,8 +29,16 @@
   <!-- block / inline -->
   <!-- block : 가로 사이즈 100% 차지하는 요소 : div, p, h1~h6 -->
   <!-- inline : 내용만큼만 가로 사이즈 차지하는 요소 : span -->
-  <p class="bg-yellow">123</p>
-  <p class="bg-yellow">456</p>
+  <div class="bg-yellow">
+    <p>123</p>
+    <p>456</p>
+    <p>123</p>
+    <p>456</p>
+    <p>123</p>
+    <p>456</p>
+    <p>123</p>
+    <p>456</p>
+  </div>  
   <span class="bg-pink">123</span>
   <span class="bg-pink">456</span>
   
