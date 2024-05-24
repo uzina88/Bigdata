@@ -1,4 +1,9 @@
 body{background: #000;}
 .text-bold{font-weight: bold;}
 .box{text-align: center;margin: 100px auto 0 auto;}
-p.open-gogle{color: #000;background: #fff;padding: 30px 50px;width: 500px;margin: 30px auto;border-radius: 40px;font-size: 20px;}
+.open-google{color: #000;background: #fff;padding: 30px 50px;width: 500px;margin: 30px auto;border-radius: 40px;box-sizing: border-box;}
+.google2{width: 450px!important;}
+.font-size{font-size: 25px;font-weight: bold;}
+.baw{background-color: #fff;text-align: center;margin: 30px auto;padding: 20px 0;border-radius: 40px;}
+.underline{text-decoration: underline;}
+.p50{padding: 50px 0;display: block;}
