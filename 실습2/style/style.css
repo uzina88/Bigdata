@@ -1,0 +1,4 @@
+body{background: #000;}
+.text-bold{font-weight: bold;}
+.box{text-align: center;margin: 100px auto 0 auto;}
+p.open-gogle{color: #000;background: #fff;padding: 30px 50px;width: 500px;margin: 30px auto;border-radius: 40px;font-size: 20px;}
