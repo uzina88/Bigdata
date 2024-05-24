@@ -1,0 +1,8 @@
+body{font-size: 26px;}
+.float{margin: 0 auto;width: 1200px;}
+.header{background-color: aquamarine;padding-bottom: 50px;}
+.margin-box{height: 500px;}
+.margin-box div{float: left;text-align: left;height: 500px;}
+.margin-box1{width: 200px;background-color: blueviolet;}
+.margin-box2{width: 1000px;background-color: brown;}
+.footer{clear: both;background-color: green;padding-bottom: 50px;}
