@@ -70,6 +70,7 @@
   border: 5px solid blue;
   height: 800px;
   display: flex;
+  flex-direction:column;
   /* flex-direction 기본값:row 
      flex-direction이 row 일 떄
      justify-content(수평)
