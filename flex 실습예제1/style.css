@@ -1,4 +1,12 @@
-li {
+li{
+    list-style: none;
+}
+
+.logo img{
+    width: 80px;
+}
+
+/* li {
     list-style: none;
   }
   
@@ -28,4 +36,4 @@ li {
   
   .title {
     color: #fff;
-  }
+  } */
