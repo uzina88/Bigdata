@@ -128,3 +128,49 @@ a{
   color: #fff;
   padding: 0 12px;
 }
+
+
+
+
+
+/* 최대 1200px / 1200px 이하부터 적용할 스타일*/
+@media screen and (max-width:1200px) {
+  .global-header{
+    background-color: pink;
+    display: flex;
+    /*수평 양끝 정렬*/
+    justify-content: space-between;
+    /*수직 가운데 정렬*/
+    align-items: center; 
+    padding: 12px 20px;
+  }
+  
+  .second-box{width: 70%;}
+
+  .card-list{
+    margin-top: 50px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30 auto;
+    align-items: center;
+  }
+  
+  .card-list div{
+    color: #fff;
+    width: 70%;
+    background: #000;
+    text-align: center;
+    padding: 50px 15px;
+    border-radius: 20px;
+    margin: 20px 0px;
+    box-sizing: border-box;
+  }
+  
+}
+
+
+@media screen and (max-width:768px) {
+
+}
+
