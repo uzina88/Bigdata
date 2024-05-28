@@ -1,39 +1,130 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
 li{
-    list-style: none;
+  list-style: none;
 }
 
 .logo img{
-    width: 80px;
+  width: 60px;
 }
 
-/* li {
-    list-style: none;
-  }
+a{
+  color: #000;
+  text-decoration: none;
+}
+
+.global-header{
+  background-color: #333;
+  display: flex;
+  /*수평 양끝 정렬*/
+  justify-content: space-between;
+  /*수직 가운데 정렬*/
+  align-items: center; 
+  padding: 12px 20px;
+}
+.gnb-list{
+  display: flex;/*수평정렬*/
+  /* 
+  width 값을 주고 justify-content:space-betwwn 을 넣으면
+  크기에 맞게 양끝 기준으로 골고루 너비가 배분된다.
+  width: 300px;
+  justify-content: space-between; */
+}
+.gnb-list li a{
+  color: #fff;
+  font-weight: bold;
+  padding: 0 20px;
+}
+.gnb-list li a:hover{
+  color: blue;
+  text-decoration: underline;
+}
+.back-img{
+  height: 600px;
+  background-image: url(./images/back.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.back-txt{
+  text-align: center;
+  color: #fff;
+  /* 수평 정렬 */
+  display: flex; 
+  /* 수직으로 정렬 변경 */
+  flex-direction: column;
+  /* 수직 가운데 정렬(원래는 수평) */
+  justify-content: center;
+  /* 수평 가운데 정렬(원래는 수직) */
+  align-items: center;
+  height: 600px;
+  color: #fff;
+}
+
+.back-txt p,
+.back-txt button{
+  margin-top: 20px;
   
-  .nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 30px;
-    border: 4px solid red;
-  }
-  
-  .logo img {
-    width: 80px;
-  }
-  
-  .menu-list {
-    display: flex;
-  }
-  
-  .back-img {
-    height: 400px;
-    background-image: url(./images/back.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
-  
-  .title {
-    color: #fff;
-  } */
+}
+.back-txt p{
+  font-size: 18px;
+}
+.back-txt button{
+  padding:8px 12px;
+  border-radius: 7px;
+}
+
+.second-box{
+  width: 500px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  margin: -90px auto 0 auto;
+  padding: 50px 36px;
+  border-radius: 20px;
+}
+
+.second-box p{
+  margin-top: 20px;
+}
+
+.card-list{
+ margin-top: 50px; 
+ display: flex;
+ justify-content: center;
+}
+
+.card-list div{
+  width: 300px;
+  color: #fff;
+  background: #000;
+  text-align: center;
+  padding: 50px 15px;
+  border-radius: 20px;
+  margin: 0 10px;
+}
+.card-list p{
+  margin-top: 20px;
+}
+
+.global-footer{
+  margin-top: 80px;
+  color: #fff;
+  background-color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+}
+.footer-link{
+  display: flex;
+  /* width: 150px;
+  justify-content: space-between; */
+}
+.footer-link li a{
+  color: #fff;
+  padding: 0 12px;
+}
