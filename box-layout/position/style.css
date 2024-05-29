@@ -20,7 +20,9 @@
   background-color: aqua;
 }
 .box2{
-  /* 전체적으로 고정으로 따라다님 */
+  /* 전체적으로 고정으로 따라다님 
+    기본갑 : scroll
+  */
   position: fixed;
   top: 20px;
   right: 20px;
@@ -36,6 +38,31 @@
   height: 120px;
   border: 1px solid #000;
 }
-.scroll{
+/* .scroll{
   height: 1600px!important;
+} */
+
+
+
+.back-box{
+  height: 600px;
+  background-color: #8ccc;
+  position: relative;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.back-img{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 400px;
+  height: 400px;
+  background-image: url(./images/cat3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
