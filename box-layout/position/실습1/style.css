@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  li{
+    list-style: none;
+  }
+  
+  .logo img{
+    width: 60px;
+  }
+  
+  a{
+    color: #000;
+    text-decoration: none;
+  }
+  
+  .top{position: fixed;bottom: 70px;right: 20px;background-color: coral;color: #fff;
+  width: 50px;height: 50px;border-radius: 50%;display: flex;text-align: center;justify-content: center;align-items: center;}
+
+  .global-header{
+    background-color: #333;
+    display: flex;
+    /*수평 양끝 정렬*/
+    justify-content: space-between;
+    /*수직 가운데 정렬*/
+    align-items: center; 
+    padding: 12px 20px;
+  }
+  .gnb-list{
+    display: flex;/*수평정렬*/
+    /* 
+    width 값을 주고 justify-content:space-betwwn 을 넣으면
+    크기에 맞게 양끝 기준으로 골고루 너비가 배분된다.
+    width: 300px;
+    justify-content: space-between; */
+  }
+  .gnb-list li a{
+    color: #fff;
+    font-weight: bold;
+    padding: 0 20px;
+  }
+  .gnb-list li a:hover{
+    color: blue;
+    text-decoration: underline;
+  }
+  .back-img{
+    height: 600px;
+    background-image: url(./images/스누피배경.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .back-txt{
+    text-align: center;
+    color: #fff;
+    /* 수평 정렬 */
+    display: flex; 
+    /* 수직으로 정렬 변경 */
+    flex-direction: column;
+    /* 수직 가운데 정렬(원래는 수평) */
+    justify-content: center;
+    /* 수평 가운데 정렬(원래는 수직) */
+    align-items: center;
+    height: 600px;
+    color: #fff;
+  }
+  
+  .back-txt p,
+  .back-txt button{
+    margin-top: 20px;
+    
+  }
+  .back-txt p{
+    font-size: 18px;
+  }
+  .back-txt button{
+    padding:8px 12px;
+    border-radius: 7px;
+  }
+  
+  
+  .second-box p{
+    margin-top: 20px;
+  }
+  
+  .card-list{
+   margin-top: 50px; 
+   display: flex;
+   justify-content: center;
+  }
+  
+  .card-list div{
+    width: 300px;
+    color: #fff;
+    background: skyblue;
+    text-align: center;
+    padding: 50px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+  }
+  .card-list p{
+    margin-top: 20px;
+  }
+
+
+  .back-box1{
+    margin-top: 50px;
+    height: 600px;
+    background-color: #8ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .back-img1{
+    margin: 0 15px;
+    width: 400px;
+    height: 400px;
+    background-image: url(./images/스누피2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .back-img2{
+    margin: 0 15px;
+    width: 400px;
+    height: 400px;
+    background-image: url(./images/pngegg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+
+  
+  .global-footer{
+    margin-top: 80px;
+    color: #333;
+    background-color: khaki;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+  }
+  .footer-link{
+    display: flex;
+    /* width: 150px;
+    justify-content: space-between; */
+  }
+  .footer-link li a{
+    color: #333;
+    padding: 0 12px;
+  }
+  
+  
+  
+  
+  
+  /* 최대 1200px / 1200px 이하부터 적용할 스타일*/
+  @media screen and (max-width:1200px) {
+    .global-header{
+      background-color: pink;
+      display: flex;
+      /*수평 양끝 정렬*/
+      justify-content: space-between;
+      /*수직 가운데 정렬*/
+      align-items: center; 
+      padding: 12px 20px;
+    }
+    
+    .second-box{width: 70%;}
+  
+    .card-list{
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+      margin: 50px auto;
+    }
+    
+    .card-list div{
+      color: #fff;
+      width: 100%;
+      margin: 15px 0px;
+      box-sizing: border-box;
+    }
+    
+  }
+  
+  
+  @media screen and (max-width:768px) {
+  
+    .card-list{
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      margin: 50px auto;
+    }
+  
+  
+  }
+  
+  
