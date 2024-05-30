@@ -5,15 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>layout 실습예제2</title>
   <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap" rel="stylesheet">
+  <!-- https://realfavicongenerator.net/ 파비콘 사이트 시작 -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#ffc40d">
+  <meta name="theme-color" content="#ffffff">  
+<!-- https://realfavicongenerator.net/ 파비콘 사이트 끝 -->
+  <script src="https://kit.fontawesome.com/d6979414de.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-  <a class="top" href="#top">TOP</a>
+  <a class="top" href="#top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </a>
 
+  <div class="side_box">
+    <ul>
+      <li>sidemenu1</li>
+      <li>sidemenu2</li>
+      <li>sidemenu3</li>
+      <li>sidemenu4</li>
+    </ul>
+  </div>
   <header class="global-header">
     <h1 class="logo">
       <a href="./index.html">
-        <img src="./images/applelogo.png" alt="logo">
+        <img src="./assets/images/스누피2.png" alt="logo">
     </a>
     </h1>
     <ul class="gnb-list">
@@ -58,9 +81,18 @@
   <footer class="global-footer">
     <h3>Contack</h3>
     <ul class="footer-link">
-      <li><a href="mailto:shjnlove3@naver.com">메일</a></li>
-      <li><a href="tel:010-3308-7940">전화</a></li>
-      <li><a href="https://www.youtube.com/@chicnong">유튜브</a></li>
+      <li><a href="mailto:shjnlove3@naver.com">
+        <i class="fa-solid fa-envelope"></i>
+        메일
+      </a></li>
+      <li><a href="tel:010-3308-7940">
+        <i class="fa-solid fa-phone"></i>
+        전화
+      </a></li>
+      <li><a href="https://www.youtube.com/@chicnong">
+        <i class="fa-brands fa-youtube"></i>
+        유튜브
+      </a></li>
     </ul>
   </footer>
 

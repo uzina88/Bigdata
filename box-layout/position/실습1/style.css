@@ -16,8 +16,23 @@
     text-decoration: none;
   }
   
-  .top{position: fixed;bottom: 70px;right: 20px;background-color: coral;color: #fff;
+  .gowun-batang-regular {
+    font-family: "Gowun Batang", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  body{
+    font-family: "Gowun Batang", serif;
+  }
+  
+  .top{position: fixed;bottom: 60px;right: 20px;background-color: coral;color: #fff;
   width: 50px;height: 50px;border-radius: 50%;display: flex;text-align: center;justify-content: center;align-items: center;}
+
+  .side_box{
+    position: fixed;right: 30px;top:150px;
+    background: #ccc;padding: 10px;
+  }
 
   .global-header{
     background-color: #333;
@@ -47,10 +62,11 @@
   }
   .back-img{
     height: 600px;
-    background-image: url(./images/스누피배경.jpeg);
+    background-image: url(./assets/images/스누피배경.jpeg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    
   }
   .back-txt{
     text-align: center;
@@ -118,21 +134,23 @@
     margin: 0 15px;
     width: 400px;
     height: 400px;
-    background-image: url(./images/스누피2.png);
+    background-image: url(./assets/images/스누피2.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    background-color: #fff;
   }
   .back-img2{
     margin: 0 15px;
     width: 400px;
     height: 400px;
-    background-image: url(./images/pngegg.png);
+    background-image: url(./assets/images/pngegg.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    background-color: #fff;
   }
 
 
