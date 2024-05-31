@@ -26,6 +26,12 @@
     font-family: "Gowun Batang", serif;
   }
 
+/* 모바일 버전에서만 보이는 클래스 */
+  .sm-only{
+    display: none;
+  }
+
+
  
 /* ---------------------------------------------------------- */
 
@@ -239,6 +245,32 @@
     display: block;
   }
 
+  /* sidebar 수정 */
+  .sidebar{
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    padding: 20px;
+  }
+  .sidebar li{
+    text-align: center;
+  }
+  .sidebar ul li a{
+    color: #000;
+    font-size: 18px;
+    padding: 8px 0;
+    display: inline-block;
+  }
+ .sidebar-close-btn{
+    text-align: right;
+    font-size: 22px;
+  }
+
+
+
 
 
 
@@ -274,7 +306,20 @@
   
   
   @media screen and (max-width:768px) {
-  
+    /* 모바일 버전에서만 보이는 */
+    .sm-only{
+      display:block;
+    }
+    /* 모바일 버전에서만 안보이게 처리 */    
+    .sm-hidden{
+      display:none;
+    }
+    /* 햄버거 메뉴 수정 */
+    .sidebar-open-btn{
+      color: #fff;
+      font-size: 24px;
+      cursor: pointer;
+    }
     .card-list{
       width: 90%;
     }
