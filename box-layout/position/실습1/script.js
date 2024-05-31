@@ -13,3 +13,26 @@ popupOpenBtn.addEventListener('click', function(){
 popupCloseBtn.addEventListener('click', function(){
   popup.classList.remove('is-active');
 })
+
+
+
+// siderbar
+// let sidebar = document.querySelector('.sidebar');
+// let sidebarOpenBtn = document.querySelector('.sidebar-open-btn');
+// let sidebarCloseBtn = document.querySelector('.sidebar-close-btn');
+// // console.log(sidebarOpenBtn)
+
+// // sidebarOpenBtn 클릭시 sidebar에 is-active class Add
+// sidebarOpenBtn.addEventListener('click', function(){
+//   sidebar.classList.add('is-active');
+// })
+// // sidebarOpenBtn 클릭시 sidebar에 is-active class remove
+// sidebarCloseBtn.addEventListener('click', function(){
+//   sidebar.classList.remove('is-active');
+// })
+
+
+// 함수 소괄호 안 : 매개변수
+function plus (){
+  // 실행 할 코드
+}
