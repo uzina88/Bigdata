@@ -8,3 +8,200 @@
 body{
   font-family:"Roboto Condensed", sans-serif;
 }
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+  color: #000;
+}
+
+li{
+  list-style: none;
+}
+
+input{
+  border: none;
+}
+
+button{
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+
+
+/* header ------------------------------------- */
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 40px;
+}
+.gnb-list{
+  display: flex;
+  width: 250px;
+  justify-content: space-between;
+}
+.gnb-list li a{
+  font-weight: 700;
+  transition: color 300ms ease-in-out;
+}
+
+.gnb-list li a:hover{
+  color: rgb(235,27,27);
+}
+
+/* 햄버거 메뉴는 모바일에서만 보여야함. */
+.sm-only{
+  display: none;
+}
+
+.logo img{
+  width: 60px;
+}
+
+.search-btn{cursor: pointer;}
+
+/* 스크롤 시 고정 top 메뉴 */
+.lnb{
+  border-top:2px solid rgb(255,213,23);
+  background-color: rgb(235, 27, 27);
+  /* top:0; 부터 fixed 시켜준다 */
+  position: sticky;
+  top:0;
+  left: 0;
+}
+.lnb-list{
+  display: flex;
+  padding: 12px 40px;
+}
+.lnb a{
+  padding-right: 20px;
+  color: #fff;
+}
+
+/* main */
+.back-img{
+  height: 600px;
+  background-image: url(./assets/images/back.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.menu-list{
+  display: flex;
+  /* 공간이 부족하면 수직으로 떨어져라 */
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 40px auto;
+  width: 90%;
+  padding: 50px;
+}
+
+.menu-item{
+  /* offset-x | offset-y | 블러 */
+  box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  /* width 값을 자동으로 계산 | 부모 space-between 활용 */
+  width: calc((100% - 60px) / 3);
+  margin: 16px 0;
+  overflow: hidden;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.menu-item a{
+  transition:opacity 300ms ease-in-out;
+}
+.menu-item a:hover{
+  opacity: 0.5;
+}
+
+.menu-item img{
+  width: 100%;
+}
+
+.mac-story{
+  border-top:2px solid rgb(255,213,23);
+  padding: 8px 0;
+  position: sticky;
+  left: 0;
+  bottom: 0;
+  background-color: #fff;
+}
+.mac-story-list{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  width: 30%;
+  margin: 0 auto;
+}
+.mac-story-list li img{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* footer */
+footer{
+  background-color: rgb(235,27,27);
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  padding: 20px 40px;
+}
+
+.txt-yellow a{color: rgb(255,213,23);}
+
+footer ul li,
+footer ul li a{
+  color: #fff;
+}
+
+.footer-1{margin-right: 20px;}
+
+.footer-info{
+  /* 여백을 다 가지고옴 */
+  flex-grow: 1;
+}
+
+.footer-link{
+  display: flex;
+}
+
+.footer-link li{
+  background-color: #fff;
+  width: 40px;height: 40px;
+  border-radius: 50%;
+  margin: 0 8px;
+  /* position: relative; 가운데 정렬 동일 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 300ms ease-in-out;
+}
+
+.footer-link li i{
+  color: rgb(235,27,27);
+  font-size: 24px;
+  transition: color 300ms ease-in-out;
+  /* position: absolute;
+  left: 50%;
+  top:50%;
+  transform: translate(-50%,-50%); */
+}
+
+.footer-link li:hover{
+  background-color:rgb(235,27,27);
+}
+.footer-link li i:hover{
+  color: #fff;
+}
