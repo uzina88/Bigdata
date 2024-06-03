@@ -1,0 +1,187 @@
+/* 초기 셋팅 --------------------------------------------------- */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  color: #333;
+  text-decoration: none;
+}
+
+button{outline: none;border: 0;cursor: pointer;background: transparent;}
+
+
+body{
+  font-family:"Roboto Condensed", sans-serif;
+}
+
+/* 모바일 버전에서만 보이는 클래스 */
+.sm-only{
+  display: none;
+}
+
+
+/* ---------------------------------------------------------- */
+
+
+.global-header{
+  background-color:#fff;
+  display: flex;
+  /*수평 양끝 정렬*/
+  justify-content: space-between;
+  /*수직 가운데 정렬*/
+  align-items: center; 
+  padding: 12px 20px;
+}
+
+.logo img{
+  width: 60px;
+}
+
+
+.gnb-list{
+  /*수평정렬*/
+  display: flex;
+  /* 
+  width 값을 주고 justify-content:space-betwwn 을 넣으면
+  크기에 맞게 양끝 기준으로 골고루 너비가 배분된다.
+  width: 300px;
+  justify-content: space-between; */
+}
+
+.gnb-list li{margin-right: 20px;}
+.gnb-list li:last-child{margin-right: 0;}
+.gnb-list li a{
+  color: #333;
+  font-weight: bold;
+  /* font-weight:700; */
+  transition: color 300ms;
+}
+.gnb-list li a:hover{
+  color: blue;
+  text-decoration: underline;
+}
+.back-img{
+  height: 600px;
+  background-image: url(./assets/images/back.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  
+}
+
+
+.mac-list{
+  color: #fff;
+  display: flex;
+  padding: 30px;
+}
+
+.mac-list li{
+  padding-right: 30px;
+}
+
+.mac-list li a{
+  color: #fff;
+  transition: color 300ms;
+}
+.mac-list li a:hover{
+  color:aqua;
+  text-decoration: overline;
+}
+
+
+
+
+.card-list{
+  margin-top: 50px; 
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 80px auto;
+  /* 부모 사이즈 지정 */
+  }
+  
+  .card-list div{
+    color: #333;
+    width: 30%;
+    background: #fff;
+    text-align: center;
+    padding: 30px 12px;
+    border-radius: 12px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow:5px 0px 10px rgba(0,0,0,0.2);
+  }
+
+  .card-list div img{width: 100%;}
+
+  .border-line{width: 100%;border-bottom: 3px solid yellow;}
+
+  .story-list{
+    display: flex;
+    width: 500px;
+    margin: 30px auto;
+  }
+  .story-list div{
+    margin: 0 10px;
+  }
+  .story-list div a{
+    text-align: center;
+    display: inline-block;
+  }
+  .story-list div h3{
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: 600;
+  }
+  .side-img{
+    width: 150px;
+    height: 150px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+  } 
+  .side-img1{background-image: url(./assets/images/side1.png);} 
+  .side-img2{background-image: url(./assets/images/side2.jpeg);} 
+  .side-img3{background-image: url(./assets/images/top.jpeg);} 
+
+
+.global-footer{
+  color: #fff!important;
+  background-color: red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+.footer-sub-menu li a {
+  color: #fff!important;
+}
+.sns-link{
+  display: flex;
+}
+.sns-link li{
+  margin: 0 5px;
+  border-radius: 50%;
+  width: 40px;height: 40px;
+}
+.sns-link li a{
+  color: red!important;
+  background: #fff;
+  border-radius: 50%;
+  width: 100%;height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sns-link i{font-size: 20px;transition: color 300ms;}
+.sns-link i:hover{color:#000;}
