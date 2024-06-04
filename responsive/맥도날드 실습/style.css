@@ -158,25 +158,19 @@ footer{
   display: flex;
   padding: 20px 40px;
 }
-
 .txt-yellow a{color: rgb(255,213,23);}
-
 footer ul li,
 footer ul li a{
   color: #fff;
 }
-
 .footer-1{margin-right: 20px;}
-
 .footer-info{
   /* 여백을 다 가지고옴 */
   flex-grow: 1;
 }
-
 .footer-link{
   display: flex;
 }
-
 .footer-link li{
   background-color: #fff;
   width: 40px;height: 40px;
@@ -187,8 +181,8 @@ footer ul li a{
   justify-content: center;
   align-items: center;
   transition: background-color 300ms ease-in-out;
+  cursor: pointer;
 }
-
 .footer-link li i{
   color: rgb(235,27,27);
   font-size: 24px;
@@ -198,10 +192,173 @@ footer ul li a{
   top:50%;
   transform: translate(-50%,-50%); */
 }
-
 .footer-link li:hover{
   background-color:rgb(235,27,27);
 }
-.footer-link li i:hover{
+.footer-link li:hover i{
   color: #fff;
 }
+
+/* search 화면 */
+.search{
+  display: none;
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background-color: rgba(0,0,0,0.8);
+}
+/* is-open 클래스가 추가되면, 화면에 보여줘라 */
+.search.is-open{
+  display: block;
+}
+
+.search > div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* 높이값 적용해야 수직정렬 */
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.search-box{
+  display: flex;
+  width: 100%;
+}
+
+.search-box input{
+  flex-grow: 1;
+  margin-right: 20px;
+  padding: 24px 40px;
+  border-radius: 30px;
+}
+
+.search-box button{
+  background-color: rgb(255,213,23);
+  padding: 24px 40px;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+.search-close-btn{
+  margin-top: 50px;
+  background-color: rgb(255,213,23);
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+
+
+/* 반응형 */
+@media screen and (max-width:1200px) {
+  
+  .menu-item{
+    width: calc((100% - 60px) / 2);
+  }
+  .mac-story-list{
+    width: 45%;
+  }
+  .mac-story-list li img{
+  width: 80px;
+  height: 80px;
+  }
+
+  
+
+}
+
+
+
+@media screen and (max-width:768px) {
+  
+  /* 모바일에서만 보이게 */
+  .sm-only{display: block;}
+  .sm-hidden{display: none;}
+  .sidebar-open-btn{
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .menu-list,
+  .menu-item{
+    width: 100%;
+  }
+  .mac-story-list{
+    width: 60%;
+  }
+  .mac-story-list li img{
+  width: 50px;
+  height: 50px;
+  }
+
+  /* footer */
+  footer{
+    flex-wrap: wrap;
+  }
+  .footer-1{margin-right: 20px;}
+  .footer-info{
+    text-align: right;
+  }
+  .footer-link{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 30px;
+  }
+ 
+  /* mobile - sidebar */
+  .sidebar{
+    /*display: none;*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    height: 100%;
+    width: 200px;
+    padding: 30px;
+    z-index: 100;
+    
+    transform: translate(-200px);
+    transition: transform 300ms;
+  }
+  .sidebar.active{
+    /* display:block */
+    transform: translate(0);
+  }
+  .overlay{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.8);
+  }
+  .overlay.active{
+    display: block;
+  }
+
+  .sidebar ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sidebar ul li{
+    margin: 10px 0;
+  }
+
+}
+
+
+
+
