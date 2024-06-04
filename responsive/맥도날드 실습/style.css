@@ -318,7 +318,6 @@ footer ul li a{
  
   /* mobile - sidebar */
   .sidebar{
-    /*display: none;*/
     position: fixed;
     top: 0;
     left: 0;
@@ -327,25 +326,29 @@ footer ul li a{
     width: 200px;
     padding: 30px;
     z-index: 100;
-    
-    transform: translate(-200px);
-    transition: transform 300ms;
+    /*display: none;*/
+    transform: translateX(-200px);
+    transition: transform 300ms ease-in-out;
   }
   .sidebar.active{
     /* display:block */
-    transform: translate(0);
+    transform: translateX(0);
   }
   .overlay{
-    display: none;
+    /* opacity 으로 overlay 배경 transition 효과 주기 */
+    visibility: hidden;
+    opacity: 0;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     background-color: rgba(0,0,0,0.8);
+    transition: opacity 500ms;
   }
   .overlay.active{
-    display: block;
+    opacity: 1;
+    visibility: visible;
   }
 
   .sidebar ul{
