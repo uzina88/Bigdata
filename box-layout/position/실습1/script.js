@@ -14,7 +14,6 @@ popupCloseBtn.addEventListener('click', function(){
   popup.classList.remove('is-active');
 })
 
-
 // siderbar
 let sidebar = document.querySelector('.sidebar');
 let sidebarOpenBtn = document.querySelector('.sidebar-open-btn');

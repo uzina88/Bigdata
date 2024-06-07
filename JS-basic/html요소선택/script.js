@@ -9,7 +9,7 @@ hello.innerHTML = '안녕?';
 hello.style.color = 'green';
 
 // ChangeBtn 클릭 했을 때, html 'Hello', color -> blue
-// addEventListener('click', () => {})
+// addEventListener('click', () => {}) | function => 같음
 ChangeBtn.addEventListener('click',() => {
     hello.innerHTML = 'Hello';
     hello.style.color = 'blue';
