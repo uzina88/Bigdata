@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>input태그 | 회원가입</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.slim.js" integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <h1>회원가입</h1>
+    <p style="border-bottom: 1px solid #000;padding-bottom: 10px;">
+      회원가입 페이지 입니다. 본사는 고객님들의 개인정보를 소중하고 안전하게 보관하고 있습니다.<br>
+      불편사항이 있으시면 042-1234-1234로 연락주시기 바랍니다.
+    </p>
+    <!-- action : 데이터가 전송될 서버 URL -->
+    <!-- method : 데이터를 전송하는 방식(HTTP 메소드)을 지정 -->
+    <!-- 값이 비어있을 때 기본값 : GET -->
+    <form action="./action.html" method="GET">
+      <table>
+        <tr>
+            <td>아이디</td>
+            <td>
+              <input type="text" placeholder="아이디를 입력하세요">
+            </td>
+            <td><button type="button">아이디 중복체크</button></td>
+        </tr>
+        <tr>
+          <td>비밀번호</td>
+          <td>
+            <input type="password">
+          </td>
+        </tr>
+        <tr>
+          <td>이름</td>
+          <td>
+            <input type="text">
+          </td>
+        </tr>
+        <tr>
+          <td>이메일</td>
+          <td>
+            <input type="email">
+          </td>
+        </tr>
+        <tr>
+          <td>국적</td>
+          <td>
+            <select name="" id="">
+              <option value="">대한민국</option>
+              <option value="">미국</option>
+              <option value="">독일</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>성별</td>
+          <td>
+            <span>남자<input type="radio" name="gender"></span>
+            <span>여자<input type="radio" name="gender"></span>
+          </td>
+        </tr>
+        <tr>
+          <td>전화번호</td>
+          <td>
+           <select name="" id="">
+            <option value="">010</option>
+            <option value="">011</option>
+            <option value="">042</option>
+           </select>
+           -
+          </td>
+          <td><input type="number">-</td>
+          <td><input type="number"></td>
+        </tr>
+        <tr>
+          <td>희망연봉</td>
+          <td>
+            <input type="range" step="50">
+          </td>
+        </tr>
+        <tr>
+          <td>취미</td>
+          <td>
+            <span>양궁<input type="checkbox" neme="gender"></span>
+            <span>등산<input type="checkbox" neme="gender"></span>
+            <span>영화감상<input type="checkbox" neme="gender"></span>
+            <span>독서<input type="checkbox" neme="gender"></span>
+            <span>요리<input type="checkbox" neme="gender"></span>
+            <span>수영<input type="checkbox" neme="gender"></span>
+            <span>야구<input type="checkbox" neme="gender"></span>
+            <span>축구<input type="checkbox" neme="gender"></span>
+            <span>배구<input type="checkbox" neme="gender"></span>
+            <span>캘리그라피<input type="checkbox" neme="gender"></span>
+            <span>바둑<input type="checkbox" neme="gender"></span>
+          </td>
+        </tr>
+        <tr>
+          <td>증명사진</td>
+          <td><input type="file"></td>
+        </tr>
+        <tr>
+          <td>자기소개서</td>
+          <td> <textarea name="" id="" placeholder="40자 미만으로 작성하시오."></textarea></td>
+        </tr>
+        
+        
+      </table>
+
+      <input type="submit">
+      <input type="reset">
+
+
+      <!-- <select class="year" name="" id="">
+
+      </select> -->
+
+
+    </form>
+  </div>
+  <!-- wrapper -->
+  <script src="./script.js"></script>
+</body>
+</html>
