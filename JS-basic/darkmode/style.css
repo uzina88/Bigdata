@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    height: 80px;
+    background-color: #fff;
+    border-bottom: 2px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
+}
+.logo{
+    font-size: 25px;
+}
+.mode-btn{
+    color: #fff;
+    background-color: #000;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* 다크모드 일 때 */
+header.dark{
+    background-color: #000;
+    border: 0;
+}
+header.dark .logo{
+    color: #fff;
+}
+header.dark .mode-btn{
+    color: #000;
+    background-color: #fff;
+}
+
+
