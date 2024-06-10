@@ -1,7 +1,7 @@
 // 복합대입연산자
 // 모두 ture 일때 제출되라
 let idVeri = pwVeri = pwCVhkVeri = false;
-
+console.log(idVeri , pwVeri , pwCVhkVeri)
 
 
 // 아이디 ------------------------------------------------------------------------
@@ -39,7 +39,7 @@ userpw.addEventListener('focusout',function(){
     pwWran.innerHTML = `<span class="txt-red">8자에서 16자까지, 영문자, 숫자 및 특수 문자를 포함해야 합니다.</span>`;
   } else {
     pwWran.innerHTML = '';
-    pwVeri = ture;
+    pwVeri = true;
   }
 })
 
